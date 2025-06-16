@@ -1,0 +1,31 @@
+[0m17:49:37.700426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10760f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108786900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108786690>]}
+
+
+============================== 17:49:37.703573 | e1b664e0-c537-4b9d-b2aa-eff4ce81751c ==============================
+[0m17:49:37.703573 [info ] [MainThread]: Running with dbt=1.10.1
+[0m17:49:37.703883 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/Users/victormoreno/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt init', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:49:37.713172 [info ] [MainThread]: Creating dbt configuration folder at /Users/victormoreno/.dbt
+[0m17:49:55.645477 [debug] [MainThread]: Starter project path: /Users/victormoreno/Desktop/study/dbt/linkedind/dbt_env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m17:49:55.659864 [info ] [MainThread]: 
+Your new dbt project "nyc_parking_violations" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:49:55.660620 [info ] [MainThread]: Setting up your profile.
+[0m17:50:03.935550 [info ] [MainThread]: Profile nyc_parking_violations written to /Users/victormoreno/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m17:50:03.938566 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 26.275393, "process_in_blocks": "0", "process_kernel_time": 0.170023, "process_mem_max_rss": "100990976", "process_out_blocks": "0", "process_user_time": 0.722666}
+[0m17:50:03.939448 [debug] [MainThread]: Command `dbt init` succeeded at 17:50:03.939214 after 26.28 seconds
+[0m17:50:03.940070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088278f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108786660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108786780>]}
+[0m17:50:03.940485 [debug] [MainThread]: Flushing usage events
+[0m17:50:04.814219 [debug] [MainThread]: An error was encountered while trying to flush usage events
