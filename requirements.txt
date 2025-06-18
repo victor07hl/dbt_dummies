@@ -43,7 +43,7 @@ matplotlib-inline==0.1.7
 more-itertools==10.7.0
 msgpack==1.1.1
 nest-asyncio==1.6.0
-numpy==2.3.0
+numpy
 ordered-set==4.1.0
 packaging==25.0
 pandas==2.3.0
