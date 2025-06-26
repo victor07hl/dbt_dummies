@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze_sources
+    schema: main
+    tables:
+      - name: bronze_parking_violation_codes
+      - name: customers
