@@ -47,7 +47,7 @@ class Lineage():
             }
         }
     
-    def get_recursive_refs(self, model_location: str, depth: int) -> dict:
+    def get_upstream_refs(self, model_location: str, depth: int) -> dict:
         """
             Recursively retrieve sources for a model up to a specified depth.
 
@@ -80,7 +80,7 @@ class Lineage():
             try:
                 source_location = Lineage(source, self.dbt_folder).get_model_location()
                 # Merge the recursive results into the main result dictionary
-                result.update(self.get_recursive_refs(source_location, depth - 1))
+                result.update(self.get_upstream_refs(source_location, depth - 1))
             except FileNotFoundError:
                 # If a source is not found, add it with a None path and empty sources
                 result[source] = (None, [])
