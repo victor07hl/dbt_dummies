@@ -1,3 +1,5 @@
+import graphviz
+
 class GraphvizRenderer:
     def __init__(self, lineage_data: dict):
         """
@@ -44,3 +46,20 @@ class GraphvizRenderer:
 
         graph_lines.append('}')
         return "\n".join(graph_lines)
+    
+    def generate_png(self, output_filename: str) -> None:
+        """
+        Generate a PNG image from the lineage data.
+
+        Args:
+            output_filename (str): The name of the final PNG image file (without extension).
+        """
+        # Convert lineage data to Graphviz DOT format
+        dot_content = self.to_graphviz()
+
+        # Create a Graphviz object and render the PNG image
+        graph = graphviz.Source(dot_content)
+        graph.format = 'png'
+        graph.render(output_filename, cleanup=True)
+
+        print(f"PNG image generated: {output_filename}.png")

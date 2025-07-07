@@ -28,6 +28,6 @@ df_.to_csv('up_down_list.csv',index=False)
 #generate the graphiz themplate 
 renderer = GraphvizRenderer(lineage_data=full_lineage)
 #print(downstream_dict)
-print(renderer.to_graphviz())
+renderer.generate_png(f'{model.replace('.sql','')}_lineage.png')
 
 
