@@ -31,14 +31,14 @@ class GraphvizRenderer:
 
         # Define nodes
         graph_lines.append('    // Define nodes')
-        for model, (path, _) in self.lineage_data.items():
+        for model, (path, _, __), in self.lineage_data.items():
             graph_lines.append(f'    "{model}" [label="{model}"];')
 
         graph_lines.append('')
 
         # Define edges
         graph_lines.append('    // Define edges')
-        for model, (_, sources) in self.lineage_data.items():
+        for model, (_, sources, __) in self.lineage_data.items():
             for source in sources:
                 graph_lines.append(f'    "{source}" -> "{model}" [arrowhead=None];')
 

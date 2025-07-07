@@ -1,1 +1,5 @@
 test_file*
+*temp.json
+*.csv
+*.pyc
+scripts/__pycache__/*
