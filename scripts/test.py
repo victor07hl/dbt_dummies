@@ -2,7 +2,7 @@ from model_lineage import Lineage
 from graphviz_renderer import GraphvizRenderer
 from exporter import Exporter
 
-model = 'silver_parking_violations.sql'
+model = 'gold_ticket_metrics.sql'
 modela_lineage = Lineage(model=model)
 
 modela_location = modela_lineage.get_model_location()
@@ -28,6 +28,6 @@ df_.to_csv('up_down_list.csv',index=False)
 #generate the graphiz themplate 
 renderer = GraphvizRenderer(lineage_data=full_lineage)
 #print(downstream_dict)
-#print(renderer.to_graphviz())
+print(renderer.to_graphviz())
 
 
